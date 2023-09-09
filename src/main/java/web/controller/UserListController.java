@@ -46,7 +46,7 @@ public class UserListController {
     public String updateUser(@RequestParam("usrId") Long id, Model model){
         User user  = userService.getUser(id);
         model.addAttribute("user", user);
-        return "update-info";
+        return "user-info";
     }
 
     @RequestMapping("/deleteUser")
